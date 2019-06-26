@@ -1,0 +1,432 @@
+.side-nav ul.menu-icons li {
+  padding: 15px 15px; }
+
+.side-nav ul.menu-icons {
+  margin: 0;
+  padding: 0; }
+
+.fontgrey {
+  color: #bcbcbc; }
+
+.fontblack {
+  color: black; }
+
+.fontbrown {
+  color: #966b41; }
+
+.dotgreen {
+  color: #78e1cd;
+  margin-left: 5px; }
+
+.fontblue {
+  color: #5db8ee; }
+
+.fs-8 {
+  font-size: 0.8rem; }
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px; }
+
+body {
+  overflow: hidden; }
+
+.no-mp, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+.white {
+  color: white; }
+
+.btn-white {
+  background: white;
+  color: black; }
+
+.btn-curve {
+  border-radius: 25px;
+  padding: 0px 10px;
+  margin-left: 5px; }
+
+.btn-blue {
+  color: white;
+  padding: 2px 5px;
+  background-image: linear-gradient(90deg, #62b999, #50a3ce); }
+
+.no-bd {
+  border: none; }
+
+.va-b {
+  vertical-align: bottom; }
+
+.va-m {
+  vertical-align: middle; }
+
+.tt-u {
+  text-transform: uppercase; }
+
+select {
+  background: #f7f6f5;
+  border: none;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  padding: 0px 18px 0px 10px;
+  background: url("./Screenshot from 2018-10-31 00-21-25.png");
+  background-position: right;
+  background-repeat: no-repeat; }
+
+.myselect, .myselect-2 {
+  position: relative;
+  display: inline-block; }
+
+.side-nav {
+  background: #373e88;
+  width: 60px;
+  box-sizing: border-box;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .side-nav .logo {
+    background: #3b439a; }
+    .side-nav .logo .logo-menu {
+      position: absolute;
+      top: 18px;
+      right: -12px;
+      z-index: 1; }
+  .side-nav a img {
+    padding: 14px; }
+  .side-nav ul.menu-icons li {
+    list-style: none;
+    transition: all 0.6s ease;
+    border-left: 3px solid transparent; }
+    .side-nav ul.menu-icons li.active {
+      background: #3b439a;
+      border-left: 3px solid #5cbbf0; }
+    .side-nav ul.menu-icons li a i {
+      font-size: 24px; }
+  .side-nav .nav-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #635b92;
+    padding: 0px 0px 10px 0px; }
+    .side-nav .nav-footer a img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      padding: 0px;
+      margin: 10px; }
+
+.page-wrapper {
+  width: calc(100% - 687px);
+  margin-left: 373.5px;
+  background: #f7f6f5;
+  display: flex;
+  z-index: 2; }
+  .page-wrapper .main-section {
+    flex: 2;
+    padding: 0px 15px 0px 15px;
+    background: white; }
+    .page-wrapper .main-section .fixed-display {
+      position: fixed;
+      top: 0px;
+      left: 388.5px;
+      width: calc(100% - 717px);
+      z-index: 12;
+      background: white; }
+      .page-wrapper .main-section .fixed-display .search-bar {
+        position: relative;
+        height: 60px;
+        display: flex;
+        align-items: center; }
+        .page-wrapper .main-section .fixed-display .search-bar .searchbar-control {
+          width: 100%;
+          background: #f7f6f5;
+          border: none;
+          padding: 5px 0px;
+          padding-left: 5px; }
+        .page-wrapper .main-section .fixed-display .search-bar ::placeholder {
+          font-size: 1rem; }
+        .page-wrapper .main-section .fixed-display .search-bar .search-icon {
+          position: absolute;
+          top: 18px;
+          right: 5px; }
+      .page-wrapper .main-section .fixed-display .activity-feed .activityname-sec {
+        display: flex; }
+        .page-wrapper .main-section .fixed-display .activity-feed .activityname-sec .activity-name {
+          flex: 1;
+          display: flex;
+          align-items: center; }
+          .page-wrapper .main-section .fixed-display .activity-feed .activityname-sec .activity-name p {
+            padding: 0px 10px; }
+        .page-wrapper .main-section .fixed-display .activity-feed .activityname-sec .activity-progress {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center; }
+          .page-wrapper .main-section .fixed-display .activity-feed .activityname-sec .activity-progress select {
+            margin: 0 10px; }
+      .page-wrapper .main-section .fixed-display .activity-feed .feed-nav ul {
+        display: flex;
+        margin-top: 10px;
+        border-bottom: 1px solid #f6f5f4; }
+        .page-wrapper .main-section .fixed-display .activity-feed .feed-nav ul li {
+          list-style: none;
+          display: flex;
+          align-items: center; }
+          .page-wrapper .main-section .fixed-display .activity-feed .feed-nav ul li.active {
+            border-bottom: 2px solid #5cbbf0; }
+          .page-wrapper .main-section .fixed-display .activity-feed .feed-nav ul li a {
+            padding: 5px 10px;
+            color: #bcbcbc; }
+            .page-wrapper .main-section .fixed-display .activity-feed .feed-nav ul li a i {
+              vertical-align: middle;
+              padding-right: 5px; }
+      .page-wrapper .main-section .fixed-display .activity-note {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 0px;
+        border-bottom: 1px dashed #f6f5f4; }
+        .page-wrapper .main-section .fixed-display .activity-note select {
+          margin-left: 10px; }
+    .page-wrapper .main-section .feed-wrapper {
+      margin-top: 170px;
+      overflow-y: auto;
+      height: calc(100vh - 170px);
+      padding-bottom: 50px; }
+      .page-wrapper .main-section .feed-wrapper .note-feed {
+        padding-top: 20px;
+        display: flex; }
+        .page-wrapper .main-section .feed-wrapper .note-feed .note-dp {
+          display: flex;
+          flex: 2;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center; }
+          .page-wrapper .main-section .feed-wrapper .note-feed .note-dp img {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin-bottom: 15px; }
+        .page-wrapper .main-section .feed-wrapper .note-feed .note-details {
+          flex: 10;
+          padding-bottom: 20px;
+          border-bottom: 1px dashed #f6f5f4; }
+          .page-wrapper .main-section .feed-wrapper .note-feed .note-details .note-name {
+            display: flex;
+            padding-bottom: 10px; }
+            .page-wrapper .main-section .feed-wrapper .note-feed .note-details .note-name span {
+              display: flex;
+              flex: 1;
+              justify-content: flex-end; }
+      .page-wrapper .main-section .feed-wrapper .note-attachement {
+        max-width: 472px;
+        display: flex;
+        flex-wrap: wrap; }
+        .page-wrapper .main-section .feed-wrapper .note-attachement .attachment-section {
+          flex-basis: 236px;
+          display: flex;
+          margin-top: 10px; }
+          .page-wrapper .main-section .feed-wrapper .note-attachement .attachment-section .pdf-name {
+            padding-left: 10px; }
+  .page-wrapper .left-section {
+    flex: 1;
+    padding: 0px 15px 0px 15px;
+    width: 313.5px;
+    position: fixed;
+    top: 0;
+    left: 60px;
+    background: #f7f6f5;
+    z-index: 20;
+    height: 100vh; }
+    .page-wrapper .left-section .activity-head {
+      display: flex;
+      height: 60px; }
+      .page-wrapper .left-section .activity-head .actihead-left {
+        display: flex;
+        flex-basis: 60%;
+        align-items: center; }
+        .page-wrapper .left-section .activity-head .actihead-left i {
+          font-size: 2rem;
+          margin-left: -10px; }
+        .page-wrapper .left-section .activity-head .actihead-left h3 {
+          font-size: 1.6rem;
+          color: #bcbcbc; }
+      .page-wrapper .left-section .activity-head .actihead-right {
+        display: flex;
+        flex-basis: 40%;
+        justify-content: flex-end;
+        align-items: center; }
+        .page-wrapper .left-section .activity-head .actihead-right h4 {
+          font-size: 1.2rem;
+          color: #f1b443; }
+    .page-wrapper .left-section .activity-wrapper h5 {
+      display: inline-block; }
+    .page-wrapper .left-section .prog-card {
+      padding: 10px 10px;
+      margin-top: 10px;
+      border-left: 3px solid #5cbbf0; }
+      .page-wrapper .left-section .prog-card .progress-box {
+        display: flex; }
+        .page-wrapper .left-section .prog-card .progress-box .prog-left {
+          flex: 1;
+          display: flex;
+          align-items: center; }
+        .page-wrapper .left-section .prog-card .progress-box .prog-center {
+          padding: 4px 0px; }
+        .page-wrapper .left-section .prog-card .progress-box .prog-right {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center; }
+    .page-wrapper .left-section .progress-add {
+      width: 100%;
+      height: 50px;
+      border-radius: 3px;
+      border: 1px dashed #c7c7c7;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .page-wrapper .right-section {
+    flex: 1;
+    padding: 0px 15px 0px 15px;
+    width: 313.5px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fafafa; }
+    .page-wrapper .right-section .create {
+      height: 60px;
+      display: flex;
+      justify-content: flex-end;
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding: 15px; }
+      .page-wrapper .right-section .create .create-wrapper {
+        display: flex;
+        align-items: center; }
+        .page-wrapper .right-section .create .create-wrapper i {
+          margin-left: 10px; }
+    .page-wrapper .right-section .activity-wrapper {
+      height: 23px;
+      display: flex;
+      align-items: center;
+      margin-top: 60px; }
+      .page-wrapper .right-section .activity-wrapper h5, .page-wrapper .right-section .activity-wrapper p {
+        display: inline-block;
+        margin-right: 10px; }
+    .page-wrapper .right-section .add-card {
+      background: #f7f6f5;
+      margin-top: 10px;
+      border: none; }
+      .page-wrapper .right-section .add-card .address {
+        display: flex;
+        padding: 10px; }
+        .page-wrapper .right-section .add-card .address .address-left {
+          flex: 1;
+          display: flex;
+          flex-direction: column; }
+        .page-wrapper .right-section .add-card .address .address-right {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center; }
+      .page-wrapper .right-section .add-card .address-center {
+        padding: 0px 10px;
+        padding-bottom: 10px; }
+    .page-wrapper .right-section .policy-details {
+      display: flex;
+      margin: 10px 0px; }
+      .page-wrapper .right-section .policy-details .type {
+        flex: 1; }
+      .page-wrapper .right-section .policy-details .number {
+        flex: 1; }
+    .page-wrapper .right-section .arrow-line {
+      position: relative;
+      border-top: 2px solid #c7c7c7;
+      margin: 20px 0px; }
+      .page-wrapper .right-section .arrow-line .arrow-icon {
+        position: absolute;
+        top: -10px;
+        left: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+        background: white;
+        border-radius: 50%; }
+    .page-wrapper .right-section .work-associate {
+      margin-top: 10px; }
+      .page-wrapper .right-section .work-associate .associate-id {
+        display: flex; }
+        .page-wrapper .right-section .work-associate .associate-id .joining-details {
+          display: flex;
+          background: white;
+          border-radius: 25px;
+          padding: 0 5px;
+          margin-right: 5px;
+          margin-top: 5px;
+          padding-right: 25px; }
+          .page-wrapper .right-section .work-associate .associate-id .joining-details .associate-dp {
+            display: flex;
+            align-items: center; }
+            .page-wrapper .right-section .work-associate .associate-id .joining-details .associate-dp img {
+              height: 30px;
+              width: 30px;
+              border-radius: 50%; }
+          .page-wrapper .right-section .work-associate .associate-id .joining-details .associate-name {
+            font-size: 0.9rem;
+            padding-left: 10px; }
+      .page-wrapper .right-section .work-associate .associate-details {
+        display: flex;
+        margin-top: 20px; }
+        .page-wrapper .right-section .work-associate .associate-details .associate-dp {
+          display: flex;
+          align-items: center; }
+          .page-wrapper .right-section .work-associate .associate-details .associate-dp img {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%; }
+        .page-wrapper .right-section .work-associate .associate-details .associate-name {
+          font-size: 0.9rem;
+          padding-left: 10px; }
+      .page-wrapper .right-section .work-associate .followers {
+        margin-top: 10px; }
+        .page-wrapper .right-section .work-associate .followers .followers-image {
+          display: flex;
+          margin-top: 10px; }
+          .page-wrapper .right-section .work-associate .followers .followers-image .followers-dp {
+            border: 2px solid white;
+            border-radius: 50%; }
+            .page-wrapper .right-section .work-associate .followers .followers-image .followers-dp img {
+              height: 30px;
+              width: 30px;
+              border-radius: 50%; }
+          .page-wrapper .right-section .work-associate .followers .followers-image .dp-1 {
+            z-index: 1; }
+          .page-wrapper .right-section .work-associate .followers .followers-image .dp-2 {
+            z-index: 2;
+            margin-left: -15px; }
+          .page-wrapper .right-section .work-associate .followers .followers-image .dp-3 {
+            z-index: 3;
+            margin-left: -15px; }
+          .page-wrapper .right-section .work-associate .followers .followers-image .dp-4 {
+            z-index: 4;
+            margin-left: -15px; }
+          .page-wrapper .right-section .work-associate .followers .followers-image .dp-5 {
+            z-index: 5;
+            margin-left: -15px; }
+          .page-wrapper .right-section .work-associate .followers .followers-image .add-dp {
+            display: flex;
+            align-items: center;
+            border: 1px dashed #c7c7c7;
+            height: 34px;
+            width: 34px;
+            border-radius: 50%; }
+            .page-wrapper .right-section .work-associate .followers .followers-image .add-dp i {
+              padding: 4px; }
+
+/*# sourceMappingURL=stylesheet.css.map */

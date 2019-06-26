@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course Academy</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="hero">
+        <nav class="navbar clearfix">
+            <div class="nav-wrapper clearfix">
+                <div class="mobile-nav">
+                    <button onclick="openNav()">
+                        <i class="material-icons">menu</i>
+                    </button>
+                </div>
+                <div class="logo lp-1">
+                    <a class="black" href="">Course academy</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" class="search-but wd-100" placeholder="Search...">
+                    <div class="search-icon">
+                        <i class="material-icons md-18">search</i>
+                    </div>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li>
+                            <i class="material-icons md-20">home</i>
+                            <a class="grey" href="">Home</a>
+                        </li>
+                        <li>
+                            <img src="https://image.flaticon.com/icons/svg/710/710078.svg" alt="">
+                            <a class="grey active" href="">Courses</a>
+                        </li>
+                        <li>
+                            <img src="https://image.flaticon.com/icons/svg/860/860961.svg" alt="">
+                            <a class="grey" href="">Referrals</a>
+                        </li>
+                        <li>
+                            <img src="https://image.flaticon.com/icons/svg/54/54591.svg" alt="">
+                            <a class="grey" href="">Help</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile">
+                    <div class="notification">
+                        <button class=noti>
+                            <img src="https://image.flaticon.com/icons/svg/633/633584.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="user-profile clearfix">
+                        <div class="user-nav clearfix">
+                            <div class="user-dp"></div>
+                            <div class="user-detail fw-600">
+                                <a class="grey" href="">Milton Salazar</a>
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="side-nav" id="side-nav">
+            <div class="search-bar-1">
+                <div class="close-icon">
+                    <button onclick="closeNav()">X</button>
+                </div>
+                <input type="text" class="search-but wd-100" placeholder="Search...">
+                <div class="search-icon">
+                    <i class="material-icons md-18">search</i>
+                </div>
+            </div>
+            <div class="nav-menu-1">
+                <ul>
+                    <li>
+                        <i class="material-icons md-20">home</i>
+                        <a class="grey pd-1" href="">Home</a>
+                    </li>
+                    <li>
+                        <img src="https://image.flaticon.com/icons/svg/710/710078.svg" alt="">
+                        <a class="grey active" href="">Courses</a>
+                    </li>
+                    <li>
+                        <img src="https://image.flaticon.com/icons/svg/860/860961.svg" alt="">
+                        <a class="grey" href="">Referrals</a>
+                    </li>
+                    <li>
+                        <img src="https://image.flaticon.com/icons/svg/54/54591.svg" alt="">
+                        <a class="grey" href="">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container clearfix">
+        <div class="row clearfix">
+            <div class="col-8">
+                <div class="article">
+                    <div class="article-head">
+                        <div class="article-con">
+                            <h1>Learn javascript in 30 days with great resource.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmpod tempor
+                                incididunt ut
+                                labore!</p>
+                        </div>
+                        <div class="head-property">
+                            <div class="row clearfix">
+                                <div class="col-8">
+                                    <div class="head-click">
+                                        <button class="btn secondary">
+                                            <i class="material-icons">
+                                                play_circle_outline
+                                            </i>
+                                            Overview</button>
+                                        <button class="btn primary">Start Quiz</button>
+                                    </div>
+                                </div>
+                                <div class="col-44">
+                                    <div class="share-link">
+                                        <p>Share on:</p>
+                                        <a href="">
+                                            <img src="https://image.flaticon.com/icons/svg/1051/1051309.svg" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="https://image.flaticon.com/icons/svg/87/87390.svg" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="https://image.flaticon.com/icons/svg/8/8800.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-detail">
+                    <p class="fw-500 light-grey">Courses/Javascript/
+                        <span class="grey">Learn javascript in 30 days</span>
+                    </p>
+                    <h5 class="pr-font fw-500">Javascript Programming for beginners - Part 1</h5>
+                    <div class="course-period">
+                        <div class="row-1 clearfix">
+                            <div class="col-2">
+                                <div class="c-time">
+                                    <p class="head-1">Course start date</p>
+                                    <p class="fw-500">14 Aug 2018</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="c-time">
+                                    <p class="head-1">Deadline</p>
+                                    <p class="fw-500">20 days</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="c-time">
+                                    <p class="head-1">Task status</p>
+                                    <p class="fw-500 pink">Incomplete</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="c-time">
+                                    <p class="head-1">Badges Earned</p>
+                                    <p class="fw-500 pink">-</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="c-time">
+                                    <p class="head-1">Quiz passed</p>
+                                    <p class="fw-500">15</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="task-overview">
+                    <p class="head-1">task overview</p>
+                    <p class="fw-600 lh-1">Illustrator-the world's leading vector illustration software-can be used to
+                        accomplish many different
+                        design tasks.This course core concepts and techniques that can be applied to any workflow: for
+                        print,
+                        the web, or for assets that will find their way into...
+                        <span class="hide p-color">Load more</span>
+                    </p>
+                </div>
+                <p class="head-1">upcoming tasks</p>
+                <div class="task-box">
+                    <div class="row-1 clearfix">
+                        <div class="col-3">
+                            <p class="head-1">full-stack web development</p>
+                            <div class="fw-600 fs-18 mg-12">Complete the introduction to programming course</div>
+                        </div>
+                        <div class="col-2 ta-r">
+                            <p class="head-1">30 jan 2018</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="task-box b-green clearfix">
+                    <div class="row-1 clearfix">
+                        <div class="col-3">
+                            <p class="head-1">full-stack web development</p>
+                            <div class="fw-600 fs-18 mg-12">Take the practice coding quiz</div>
+                            <p class="lh-2 font-grey">Prepare for the quiz by taking our intro to programming course.
+                                Already have programming experience?
+                                Go ahead and start the quiz!
+                            </p>
+                            <div class="quiz-btn">
+                                <button class="btn primary">Start Quiz</button>
+                                <button class="btn secondary">Prepare quiz</button>
+                            </div>
+                        </div>
+                        <div class="col-2 ta-r">
+                            <p class="head-1">30 jan 2018</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="task-box">
+                    <div class="row-1 clearfix">
+                        <div class="col-3">
+                            <p class="head-1">full-stack web development</p>
+                            <div class="fw-600 fs-18 mg-12">Complete the introduction to programming course</div>
+                        </div>
+                        <div class="col-2 ta-r">
+                            <p class="head-1">30 jan 2018</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="completed-tasks">
+                    <p class="head-1">completed tasks</p>
+                    <div class="task-box">
+                        <div class="row-1 clearfix">
+                            <div class="col-3">
+                                <p class="head-1">full-stack web development &nbsp; &nbsp; &nbsp; 30 jan 2018</p>
+                                <div class="fw-600 fs-18 mg-12">Complete the introduction to programming course</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="comp ta-r">
+                                    <div class="green-brdr">
+                                        <i class="material-icons">done</i>
+                                        Completed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-box">
+                        <div class="row-1 clearfix">
+                            <div class="col-3">
+                                <p class="head-1">full-stack web development &nbsp; &nbsp; &nbsp; 30 jan 2018</p>
+                                <div class="fw-600 fs-18 mg-12">Complete the introduction to programming course</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="comp ta-r">
+                                    <div class="green-brdr">
+                                        <i class="material-icons">done</i>
+                                        Completed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-box">
+                        <div class="row-1 clearfix">
+                            <div class="col-3">
+                                <p class="head-1">full-stack web development &nbsp; &nbsp; &nbsp; 30 jan 2018</p>
+                                <div class="fw-600 fs-18 mg-12">Complete the introduction to programming course</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="comp ta-r">
+                                    <div class="green-brdr">
+                                        <i class="material-icons">done</i>
+                                        Completed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="aside">
+                    <div class="card">
+                        <div class="row-1 clearfix">
+                            <div class="col-3">
+                                <div class="task-count">
+                                    <p class="fw-500 fs-15">2 task
+                                        <span class="p-color">Completed</span> out of 10</p>
+                                    <div class="completion-holder">
+                                        <div class="completion"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="comp ta-r">
+                                    <i class="material-icons font-grey">
+                                        keyboard_arrow_left
+                                    </i>
+                                    <i class="material-icons font-grey">
+                                        keyboard_arrow_right
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="pr-font fw-500 date-day no-margin">May 5,
+                            <span class="light-grey">Wednesday</span>
+                        </h5>
+                        <div class="day fw-600 light-grey no-margin">
+                            <div class="row clearfix">
+                                <div class="col-7">
+                                    <div class="week-day">S</div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="week-day">M</div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="week-day">T</div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="week-day p-color">W</div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="week-day">T</div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="week-day">F</div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="week-day">S</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date fw-600 no-margin">
+                            <div class="row clearfix">
+                                <div class="col-7">
+                                    <div class="week-date">3</div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="week-date">4</div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="week-date primary">5</div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="week-date p-color">6</div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="week-date">7</div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="week-date">8</div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="week-date">9</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="row clearfix">
+                                <div class="col-7">
+                                    <div class="dot primary"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="dot primary"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="row clearfix">
+                                <div class="col-7">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="dot orange"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="completed-program">
+                            <div class="row-1 clearfix">
+                                <div class="col-3">
+                                    <div class="fw-600 fs-16 mg-12 no-margin">Write hello program</div>
+                                    <p class="head-1 padd-top no-margin">5 aug 2018</p>
+                                </div>
+                                <div class="col-2">
+                                    <div class="comp-1 ta-r">
+                                        <div class="p-color fw-600">
+                                            Completed</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="completed-program">
+                            <div class="row-1 clearfix">
+                                <div class="col-3">
+                                    <div class="fw-600 fs-16 mg-12 no-margin">Change colors of the shapes</div>
+                                    <p class="head-1 padd-top no-margin">5 aug 2018</p>
+                                </div>
+                                <div class="col-2">
+                                    <div class="comp-1 ta-r">
+                                        <div class="p-color fw-600">
+                                            Completed</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="completed-program">
+                            <div class="row-1 clearfix">
+                                <div class="col-3">
+                                    <div class="fw-600 fs-16 mg-12 no-margin">Change colors of the shapes</div>
+                                    <p class="head-1 padd-top no-margin">5 aug 2018</p>
+                                </div>
+                                <div class="col-2">
+                                    <div class="comp-1 ta-r">
+                                        <div class="p-color fw-600">
+                                            Completed</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="load-more p-color fw-600">
+                            Load more
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="ranking">
+                            <p class="p-color fw-500 fs-18">Total Points</p>
+                            <div class="rank-selector"></div>
+                        </div>
+                        <div class="ranking">
+                            <p class="fs-18 fw-500">Overall Rank</p>
+                        </div>
+                        <div class="border-line"></div>
+                        <div class="points-earned">
+                            <div class="row-1 clearfix">
+                                <div class="col-5">
+                                    <div class="count-section">
+                                        <div class="count fw-600 fs-18 reward-count">1265</div>
+                                        <div class="count fs-16 fw-500 points">Points earned</div>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="date-select">
+                                        <select class="selector" name="" id="">
+                                            <option value="">Last 30 days</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-line"></div>
+                        <div class="graph"></div>
+                    </div>
+                    <div class="card">
+                        <p class="fw-600 fs-16">Contact us</p>
+                        <p class="fw-600">Admissions</p>
+                        <div class="contact">
+                            <div class="row-1 clearfix">
+                                <div class="col-60">
+                                    <p class="lh-2 font-grey no-margin">Lorem ipsum dolor sit amet, consect adipisicing
+                                        elit, sed do eiusmpod. </p>
+                                </div>
+                                <div class="col-40">
+                                    <div class="cont-btn">
+                                        <button class="btn secondary">Contact</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="fw-600">Career Coach</p>
+                        <div class="contact">
+                            <div class="row-1 clearfix">
+                                <div class="col-60">
+                                    <p class="lh-2 font-grey no-margin">Lorem ipsum dolor sit amet, consect adipisicing
+                                        elit, sed do eiusmpod. </p>
+                                </div>
+                                <div class="col-40">
+                                    <div class="cont-btn">
+                                        <button class="btn secondary">Contact</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="fw-600">Instructor</p>
+                        <div class="contact">
+                            <div class="row-1 clearfix">
+                                <div class="col-60">
+                                    <p class="lh-2 font-grey no-margin">Lorem ipsum dolor sit amet, consect adipisicing
+                                        elit, sed do eiusmpod. </p>
+                                </div>
+                                <div class="col-40">
+                                    <div class="cont-btn">
+                                        <button class="btn secondary">Contact</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card document-link">
+                        <p class="fw-600 fs-16">
+                            Important Documents
+                        </p>
+                        <ul class="no-margin">
+                            <li><a class="p-color fs-16 fw-500" href="">Interview Prepwork</a></li>
+                            <li><a class="p-color fs-16 fw-500" href="">Link to Guidelines</a></li>
+                            <li><a class="p-color fs-16 fw-500" href="">Link to Videos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("side-nav").style.display = "block";
+        }
+        function closeNav() {
+            document.getElementById("side-nav").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

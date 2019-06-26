@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AgileCRM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main-page">
+        <div class="left-nav">
+            <div class="left-navhead">
+                <div class="row clearfix">
+                    <div class="col-md-9">
+                        <div class="logo">
+                            <i class="material-icons va-m violet">cloud</i>
+                            <p class="no-mp va-m">AgileCRM</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="logo-menu ta-r">
+                            <i class="material-icons va-m grey">menu</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left-navbody">
+                <div class="navbody-head pd-tb2">
+                    <div class="row clearfix">
+                        <div class="col-md-6">
+                            <p class="no-mp va-m violet">Sales</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="navbody-headicon ta-r">
+                                <i class="material-icons va-m grey">arrow_drop_up</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbody-list">
+                    <ul class="no-mp">
+                        <li><a href="" class="grey"><i class="material-icons grey va-m">home</i> &nbsp; Home</a></li>
+                        <li class="active"><a href="" class="grey"><i
+                                    class="material-icons grey va-m">perm_contact_calendar</i>
+                                &nbsp; Contacts</a></li>
+                        <li><a href="" class="grey"><i class="material-icons grey va-m">account_balance</i> &nbsp;
+                                Companies</a></li>
+                        <li><a href="" class="grey"><i class="material-icons grey va-m">chat</i> &nbsp; Deals</a></li>
+                        <li><a href="" class="grey"><i class="material-icons grey va-m">event_note</i> &nbsp; Cases</a>
+                        </li>
+                        <li><a href="" class="grey"><i class="material-icons grey va-m">insert_drive_file</i> &nbsp;
+                                Documents</a></li>
+                    </ul>
+                </div>
+                <div class="navbody-head pd-tb2">
+                    <div class="row clearfix">
+                        <div class="col-md-6">
+                            <p class="no-mp va-m">Marketing</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="navbody-headicon ta-r">
+                                <i class="material-icons va-m grey">arrow_drop_down</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbody-head pd-tb2">
+                    <div class="row clearfix">
+                        <div class="col-md-6">
+                            <p class="no-mp va-m">Services</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="navbody-headicon ta-r">
+                                <i class="material-icons va-m grey">arrow_drop_down</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-sec">
+            <div class="content-nav">
+                <div class="container-fluid">
+                    <div class="row clearfix">
+                        <div class="col-md-5">
+                            <div class="search">
+                                <label for="">
+                                    <input type="text" class="search-bar" placeholder="Type in to Search...">
+                                    <div class="search-icon"><i class="material-icons va-m grey">search</i></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="content-logo ta-c">
+                                <i class="material-icons va-m violet">bar_chart</i>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="contentnav-right">
+                                <button class="btn btn-clear"><i class="material-icons grey">add</i>
+                                    <span class="va-t grey">Add</span>
+                                </button>
+                                <button class="btn btn-clear"><i class="material-icons grey">timelapse</i></button>
+                                <div class="user-profile">
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button"
+                                            class="btn btn-user btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                            <a class="dropdown-item" href="#">Dropdown link</a>
+                                            <a class="dropdown-item" href="#">Dropdown link</a>
+                                        </div>
+                                        <div class="dp"></div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-clear noti"><i
+                                        class="material-icons grey">notifications</i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="body-action">
+                    <div class="container-fluid">
+                        <div class="row clearfix">
+                            <div class="col-md-6">
+                                <div class="action-arrow">
+                                    <button class="btn btn-clear no-mp"><i
+                                            class="material-icons grey">arrow_left</i></button>
+                                    <button class="btn btn-clear btn-2 no-mp"><i
+                                            class="material-icons grey">arrow_right</i></button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="action-btn">
+                                    <div class="email">
+                                        <button type="button" class="btn btn-primary secondary">Send Email</button>
+                                        <div class="email-icon"><i class="material-icons p-clr">mail</i></div>
+                                    </div>
+                                    <div class="action btn-2">
+                                        <button type="button" class="btn btn-primary primary">Actions</button>
+                                        <div class="action-icon"><i class="material-icons white">more_horiz</i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-wrapper">
+                    <div class="container-fluid">
+                        <div class="row clearfix">
+                            <div class="col-md-4">
+                                <div class="wrapper ht">
+                                    <div class="card bd-none bdr-5 black pd wd-100">
+                                        <div class="profile-pic"></div>
+                                        <div class="card-body ta-c bb-dot mg-10">
+                                            <h5 class="card-title no-mp">John Doe</h5>
+                                            <a href="" class="card-text grey">ProductManager@TechnoCore</a>
+                                            <div class="rating-wrapper">
+                                                <div class="row clearfix">
+                                                    <div class="col-md-6">
+                                                        <div class="row clearfix">
+                                                            <div class="rating wd-100">
+                                                                <i class="material-icons va-m yellow">star</i>
+                                                                <i class="material-icons va-m yellow">star</i>
+                                                                <i class="material-icons va-m yellow">star</i>
+                                                                <i class="material-icons va-m yellow">star</i>
+                                                                <i class="material-icons va-m yellow">star</i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="row clearfix">
+                                                            <div class="likes ta-c wd-100">
+                                                                <i class="material-icons va-m red">favorite</i>
+                                                                <span class="va-m">128</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="list-group list-group-flush pd-5 bb-dot details">
+                                            <li class="list-group-item">
+                                                Contact Information
+                                            </li>
+                                            <li class="list-group-item">
+                                                <Span class="block grey">Email Address:</Span>
+                                                john.doe @technocore.com
+                                            </li>
+                                            <li class="list-group-item">
+                                                <Span class="block grey">Phone Number:</Span>
+                                                +919533480564
+                                            </li>
+                                            <li class="list-group-item">
+                                                <Span class="block grey">Address:</Span>
+                                                West End 45th Street, San Francisco <br>90123 California, US
+                                            </li>
+                                        </ul>
+                                        <ul class="list-group list-group-flush pd-5 bb-dot details">
+                                            <li class="list-group-item">
+                                                Customer Information
+                                            </li>
+                                            <li class="list-group-item">
+                                                <Span class="block grey">Facebook:</Span>
+                                                facebook.com/caludiamills
+                                            </li>
+                                            <li class="list-group-item">
+                                                <Span class="block grey">Personal Phone Number:</Span>
+                                                +919533480564
+                                            </li>
+                                        </ul>
+                                        <div class="tags">
+                                            <p class="block pd-5 no-mp">Tags</p>
+                                            <div class="btn-tag">
+                                                <button type="button" class="btn btn-light tag  grey">test tag</button>
+                                                <div class="tag-icon"><i class="material-icons grey">clear</i></div>
+                                            </div>
+                                            <div class="btn-tag">
+                                                <button type="button" class="btn btn-light tag  grey">another
+                                                    tag</button>
+                                                <div class="tag-icon"><i class="material-icons grey">clear</i></div>
+                                            </div>
+                                            <div class="btn-tag">
+                                                <button type="button" class="btn btn-light tag  grey">test tag</button>
+                                                <div class="tag-icon"><i class="material-icons grey">clear</i></div>
+                                            </div>
+                                            <div class="btn-tag">
+                                                <button type="button" class="btn btn-light tag  grey">another
+                                                    tag</button>
+                                                <div class="tag-icon"><i class="material-icons grey">clear</i></div>
+                                            </div>
+                                            <div class="btn-tag">
+                                                <button type="button" class="btn btn-light tag  grey">test tag</button>
+                                                <div class="tag-icon"><i class="material-icons grey">clear</i></div>
+                                            </div>
+                                            <div class="btn-tag">
+                                                <button type="button" class="btn btn-light tag  grey">another
+                                                    tag</button>
+                                                <div class="tag-icon"><i class="material-icons grey">clear</i></div>
+                                            </div>
+                                            <div class="btn-tag">
+                                                <button type="button" class="btn btn-light tag  grey">test tag</button>
+                                                <div class="tag-icon"><i class="material-icons grey">clear</i></div>
+                                            </div>
+                                            <div class="btn-tag">
+                                                <button type="button" class="btn btn-light tag  grey">another
+                                                    tag</button>
+                                                <div class="tag-icon"><i class="material-icons grey">clear</i></div>
+                                            </div>
+                                        </div>
+                                        <div class="owner-info">
+                                            <div class="owner-pic va-m"></div>
+                                            <p class=""><span class="grey">Owner:</span> Mark Hansen</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="wrapper ht">
+                                    <div class="timeline-wrapper">
+                                        <div class="timeline-nav">
+                                            <nav
+                                                class="navbar pd-20 navbar-expand-lg navbar-light bg-trans no-mp fs-0.8">
+                                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                                    aria-expanded="false" aria-label="Toggle navigation">
+                                                    <span class="navbar-toggler-icon">
+                                                    </span>
+                                                </button>
+                                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                                    <div class="navbar-nav time-nav">
+                                                        <a class="nav-item nav-link pdl-0 active" id="1"
+                                                            href="#">Timeline</a>
+                                                        <a class="nav-item nav-link" id="2" href="#">Notes</a>
+                                                        <a class="nav-item nav-link" id="3" href="#">Deals</a></a>
+                                                    </div>
+                                                </div>
+                                                <div class="action-arrow">
+                                                    <button class="btn btn-clear no-mp"><i
+                                                            class="material-icons grey">arrow_left</i></button>
+                                                    <button class="btn btn-clear btn-2 no-mp"><i
+                                                            class="material-icons grey">arrow_right</i></button>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                        <div class="timelinecontent-wrapper contact-sections" id="timelineContent">
+                                            <div class="timeline-body">
+                                                <p class="black fs">August, 2016</p>
+                                                <div class="task">
+                                                    <ul class="no-mp task-list black">
+                                                        <li class="no-mp task-item">
+                                                            <div class="task-icon">
+                                                                <i class="material-icons">panorama_fish_eye</i>
+                                                            </div>
+                                                            <div class="date">
+                                                                <p class="no-mp left">12 Aug</p>
+                                                            </div>
+                                                            <div class="task-icon-2 task-add">
+                                                                <p class="no-mp grey tt-u">task added</p>
+                                                                <p class="no-mp block">Prepare for a bi-week meeting to
+                                                                    discuss new feature</p>
+                                                                <p class="no-mp grey">09.30am</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="no-mp task-item">
+                                                            <div class="task-icon">
+                                                                <i class="material-icons">panorama_fish_eye</i>
+                                                            </div>
+                                                            <div class="date">
+                                                                <p class="no-mp left">12 Aug</p>
+                                                            </div>
+                                                            <div class="task-icon-2 deal-add">
+                                                                <p class="no-mp grey tt-u">task added</p>
+                                                                <p class="no-mp block">Prepare for a bi-week meeting to
+                                                                    discuss new feature</p>
+                                                                <p class="no-mp grey">09.30am</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="no-mp task-item">
+                                                            <div class="task-icon va-t">
+                                                                <i class="material-icons va-t">panorama_fish_eye</i>
+                                                            </div>
+                                                            <div class="date va-t">
+                                                                <p class="no-mp left va-t">12 Aug</p>
+                                                            </div>
+                                                            <div class="task-icon-2 event-complete va-t">
+                                                                <p class="no-mp grey tt-u">task added</p>
+                                                                <p class="no-mp block">Prepare for a bi-week meeting to
+                                                                    discuss new feature</p>
+                                                                <p class="no-mp grey">09.30am</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="black fs">August, 2016</p>
+                                                <div class="task">
+                                                    <ul class="no-mp task-list black">
+                                                        <li class="no-mp task-item">
+                                                            <div class="task-icon">
+                                                                <i class="material-icons">panorama_fish_eye</i>
+                                                            </div>
+                                                            <div class="date">
+                                                                <p class="no-mp left">12 Aug</p>
+                                                            </div>
+                                                            <div class="task-icon-2">
+                                                                <p class="no-mp grey tt-u">task added</p>
+                                                                <p class="no-mp block">Prepare for a bi-week meeting to
+                                                                    discuss new feature</p>
+                                                                <p class="no-mp grey">09.30am</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="no-mp task-item">
+                                                            <div class="task-icon">
+                                                                <i class="material-icons">panorama_fish_eye</i>
+                                                            </div>
+                                                            <div class="date">
+                                                                <p class="no-mp left">12 Aug</p>
+                                                            </div>
+                                                            <div class="task-icon-2">
+                                                                <p class="no-mp grey tt-u">task added</p>
+                                                                <p class="no-mp block">Prepare for a bi-week meeting to
+                                                                    discuss new feature</p>
+                                                                <p class="no-mp grey">09.30am</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="no-mp task-item">
+                                                            <div class="task-icon va-t">
+                                                                <i class="material-icons va-t">panorama_fish_eye</i>
+                                                            </div>
+                                                            <div class="date va-t">
+                                                                <p class="no-mp left va-t">12 Aug</p>
+                                                            </div>
+                                                            <div class="task-icon-2 va-t">
+                                                                <p class="no-mp grey tt-u">task added</p>
+                                                                <p class="no-mp block">Prepare for a bi-week meeting to
+                                                                    discuss new feature</p>
+                                                                <p class="no-mp grey">09.30am</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="black fs">August, 2016</p>
+                                                <div class="task">
+                                                    <ul class="no-mp task-list black">
+                                                        <li class="no-mp task-item">
+                                                            <div class="task-icon">
+                                                                <i class="material-icons">panorama_fish_eye</i>
+                                                            </div>
+                                                            <div class="date">
+                                                                <p class="no-mp left">12 Aug</p>
+                                                            </div>
+                                                            <div class="task-icon-2">
+                                                                <p class="no-mp grey tt-u">task added</p>
+                                                                <p class="no-mp block">Prepare for a bi-week meeting to
+                                                                    discuss new feature</p>
+                                                                <p class="no-mp grey">09.30am</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="no-mp task-item">
+                                                            <div class="task-icon">
+                                                                <i class="material-icons">panorama_fish_eye</i>
+                                                            </div>
+                                                            <div class="date">
+                                                                <p class="no-mp left">12 Aug</p>
+                                                            </div>
+                                                            <div class="task-icon-2">
+                                                                <p class="no-mp grey tt-u">task added</p>
+                                                                <p class="no-mp block">Prepare for a bi-week meeting to
+                                                                    discuss new feature</p>
+                                                                <p class="no-mp grey">09.30am</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="no-mp task-item">
+                                                            <div class="task-icon va-t">
+                                                                <i class="material-icons va-t">panorama_fish_eye</i>
+                                                            </div>
+                                                            <div class="date va-t">
+                                                                <p class="no-mp left va-t">12 Aug</p>
+                                                            </div>
+                                                            <div class="task-icon-2 va-t">
+                                                                <p class="no-mp grey tt-u">task added</p>
+                                                                <p class="no-mp block">Prepare for a bi-week meeting to
+                                                                    discuss new feature</p>
+                                                                <p class="no-mp grey">09.30am</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="black fs">August, 2016</p>
+                                                <div class="task">
+                                                    <ul class="no-mp task-list black">
+                                                        <li class="no-mp task-item">
+                                                            <div class="task-icon">
+                                                                <i class="material-icons">panorama_fish_eye</i>
+                                                            </div>
+                                                            <div class="date">
+                                                                <p class="no-mp left">12 Aug</p>
+                                                            </div>
+                                                            <div class="task-icon-2">
+                                                                <p class="no-mp grey tt-u">task added</p>
+                                                                <p class="no-mp block">Prepare for a bi-week meeting to
+                                                                    discuss new feature</p>
+                                                                <p class="no-mp grey">09.30am</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="no-mp task-item">
+                                                            <div class="task-icon">
+                                                                <i class="material-icons">panorama_fish_eye</i>
+                                                            </div>
+                                                            <div class="date">
+                                                                <p class="no-mp left">12 Aug</p>
+                                                            </div>
+                                                            <div class="task-icon-2">
+                                                                <p class="no-mp grey tt-u">task added</p>
+                                                                <p class="no-mp block">Prepare for a bi-week meeting to
+                                                                    discuss new feature</p>
+                                                                <p class="no-mp grey">09.30am</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="no-mp task-item">
+                                                            <div class="task-icon va-t">
+                                                                <i class="material-icons va-t">panorama_fish_eye</i>
+                                                            </div>
+                                                            <div class="date va-t">
+                                                                <p class="no-mp left va-t">12 Aug</p>
+                                                            </div>
+                                                            <div class="task-icon-2 va-t">
+                                                                <p class="no-mp grey tt-u">task added</p>
+                                                                <p class="no-mp block">Prepare for a bi-week meeting to
+                                                                    discuss new feature</p>
+                                                                <p class="no-mp grey">09.30am</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dealscontent-wrapper contact-sections" id="dealContent">
+                                            <div class="timeline-body">
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <p class="black va-m no-mp">Deals(5)</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="add-btn ta-r">
+                                                            <button class="btn add s-color">Add</button>
+                                                            <div class="add-icon s-color"><i
+                                                                    class="material-icons va-m">add</i></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="deals-content">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-9">
+                                                            <div class="row">
+                                                                <div class="deal-details">
+                                                                    <div class="deal-img"></div>
+                                                                    <div class="deal-desc">
+                                                                        <p class="black no-mp fs">Deal title would go
+                                                                            here...</p>
+                                                                        <span class="grey block no-mp fs">Deal
+                                                                            explanation would go here if needed.</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="small-btn ta-r">
+                                                                <button class="btn small-icon"><i
+                                                                        class="material-icons grey">edit</i></button>
+                                                                <button class="btn small-icon"><i
+                                                                        class="material-icons grey">delete</i></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="price-detail va-m">
+                                                                <p class="grey no-mp fs">$212,347,22 </p>
+                                                                <i class="material-icons grey fs">calendar_today</i>
+                                                                <p class="grey no-mp fs">4 Months ago</p>
+                                                                <div class="price-img mgl-5 va-m"></div>
+                                                                <div class="price-img va-m"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="deals-content">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-9">
+                                                            <div class="row">
+                                                                <div class="deal-details">
+                                                                    <div class="deal-img"></div>
+                                                                    <div class="deal-desc">
+                                                                        <p class="black no-mp fs">Deal title would go
+                                                                            here...</p>
+                                                                        <span class="grey block no-mp fs">Deal
+                                                                            explanation would go here if needed.</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="small-btn ta-r">
+                                                                <button class="btn small-icon"><i
+                                                                        class="material-icons grey">edit</i></button>
+                                                                <button class="btn small-icon"><i
+                                                                        class="material-icons grey">delete</i></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="price-detail va-m">
+                                                                <p class="grey no-mp fs">$212,347,22 </p>
+                                                                <i class="material-icons grey fs">calendar_today</i>
+                                                                <p class="grey no-mp fs">4 Months ago</p>
+                                                                <div class="price-img mgl-5 va-m"></div>
+                                                                <div class="price-img va-m"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="deals-content">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-9">
+                                                            <div class="row">
+                                                                <div class="deal-details">
+                                                                    <div class="deal-img"></div>
+                                                                    <div class="deal-desc">
+                                                                        <p class="black no-mp fs">Deal title would go
+                                                                            here...</p>
+                                                                        <span class="grey block no-mp fs">Deal
+                                                                            explanation would go here if needed.</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="small-btn ta-r">
+                                                                <button class="btn small-icon"><i
+                                                                        class="material-icons grey">edit</i></button>
+                                                                <button class="btn small-icon"><i
+                                                                        class="material-icons grey">delete</i></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="price-detail va-m">
+                                                                <p class="grey no-mp fs">$212,347,22 </p>
+                                                                <i class="material-icons grey fs">calendar_today</i>
+                                                                <p class="grey no-mp fs">4 Months ago</p>
+                                                                <div class="price-img mgl-5 va-m"></div>
+                                                                <div class="price-img va-m"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="deals-content">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-9">
+                                                            <div class="row">
+                                                                <div class="deal-details">
+                                                                    <div class="deal-img"></div>
+                                                                    <div class="deal-desc">
+                                                                        <p class="black no-mp fs">Deal title would go
+                                                                            here...</p>
+                                                                        <span class="grey block no-mp fs">Deal
+                                                                            explanation would go here if needed.</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="small-btn ta-r">
+                                                                <button class="btn small-icon"><i
+                                                                        class="material-icons grey">edit</i></button>
+                                                                <button class="btn small-icon"><i
+                                                                        class="material-icons grey">delete</i></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="price-detail va-m">
+                                                                <p class="grey no-mp fs">$212,347,22 </p>
+                                                                <i class="material-icons grey fs">calendar_today</i>
+                                                                <p class="grey no-mp fs">4 Months ago</p>
+                                                                <div class="price-img mgl-5 va-m"></div>
+                                                                <div class="price-img va-m"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="deals-content">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-9">
+                                                            <div class="row">
+                                                                <div class="deal-details">
+                                                                    <div class="deal-img"></div>
+                                                                    <div class="deal-desc">
+                                                                        <p class="black no-mp fs">Deal title would go
+                                                                            here...</p>
+                                                                        <span class="grey block no-mp fs">Deal
+                                                                            explanation would go here if needed.</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="small-btn ta-r">
+                                                                <button class="btn small-icon"><i
+                                                                        class="material-icons grey">edit</i></button>
+                                                                <button class="btn small-icon"><i
+                                                                        class="material-icons grey">delete</i></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="price-detail va-m">
+                                                                <p class="grey no-mp fs">$212,347,22 </p>
+                                                                <i class="material-icons grey fs">calendar_today</i>
+                                                                <p class="grey no-mp fs">4 Months ago</p>
+                                                                <div class="price-img mgl-5 va-m"></div>
+                                                                <div class="price-img va-m"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="deals-content">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-9">
+                                                            <div class="row">
+                                                                <div class="deal-details">
+                                                                    <div class="deal-img"></div>
+                                                                    <div class="deal-desc">
+                                                                        <p class="black no-mp fs">Deal title would go
+                                                                            here...</p>
+                                                                        <span class="grey block no-mp fs">Deal
+                                                                            explanation would go here if needed.</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="small-btn ta-r">
+                                                                <button class="btn small-icon"><i
+                                                                        class="material-icons grey">edit</i></button>
+                                                                <button class="btn small-icon"><i
+                                                                        class="material-icons grey">delete</i></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="price-detail va-m">
+                                                                <p class="grey no-mp fs">$212,347,22 </p>
+                                                                <i class="material-icons grey fs">calendar_today</i>
+                                                                <p class="grey no-mp fs">4 Months ago</p>
+                                                                <div class="price-img mgl-5 va-m"></div>
+                                                                <div class="price-img va-m"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notecontent-wrapper contact-sections" id="noteContent">
+                                            <div class="timeline-body">
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <p class="black va-m no-mp">Open Tasks (3 left)</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="add-btn ta-r">
+                                                            <button class="btn add s-color">Add</button>
+                                                            <div class="add-icon s-color"><i
+                                                                    class="material-icons va-m">add</i></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="note-content">
+                                                <ul class=no-mp>
+                                                    <li>
+                                                        <div class="code">
+                                                            <label for="check" class="check-box">
+                                                                <input type="checkbox" id="check" checked>
+                                                                <span class="cus-check">
+                                                                    <div class="checkmark"></div>
+                                                                </span>
+                                                            </label>
+                                                            <div class="checkbox-details">
+                                                                <div class="deal-img"></div>
+                                                                <div class="checkbox-content">
+                                                                    <p class="block fs tt-u grey no-mp">email</p>
+                                                                    <p class="block fs black no-mp">Send over
+                                                                        investments documents</p>
+                                                                    <p class="block fs grey no-mp">Assigned to Mark.R
+                                                                        Added 12Jun 2014</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="note-content">
+                                                <ul class=no-mp>
+                                                    <li>
+                                                        <div class="code">
+                                                            <label for="check-2" class="check-box">
+                                                                <input type="checkbox" id="check-2" checked>
+                                                                <span class="cus-check">
+                                                                    <div class="checkmark"></div>
+                                                                </span>
+                                                            </label>
+                                                            <div class="checkbox-details">
+                                                                <div class="deal-img"></div>
+                                                                <div class="checkbox-content">
+                                                                    <p class="block fs tt-u grey no-mp">email</p>
+                                                                    <p class="block fs black no-mp">Send over
+                                                                        investments documents</p>
+                                                                    <p class="block fs grey no-mp">Assigned to Mark.R
+                                                                        Added 12Jun 2014</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="note-content">
+                                                <ul class=no-mp>
+                                                    <li>
+                                                        <div class="code">
+                                                            <label for="check-3" class="check-box">
+                                                                <input type="checkbox" id="check-3" checked>
+                                                                <span class="cus-check">
+                                                                    <div class="checkmark"></div>
+                                                                </span>
+                                                            </label>
+                                                            <div class="checkbox-details">
+                                                                <div class="deal-img"></div>
+                                                                <div class="checkbox-content">
+                                                                    <p class="block fs tt-u grey no-mp">email</p>
+                                                                    <p class="block fs black no-mp">Send over
+                                                                        investments documents</p>
+                                                                    <p class="block fs grey no-mp">Assigned to Mark.R
+                                                                        Added 12Jun 2014</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="note-content">
+                                                <ul class=no-mp>
+                                                    <li>
+                                                        <div class="code">
+                                                            <label for="check-4" class="check-box">
+                                                                <input type="checkbox" id="check-4" checked>
+                                                                <span class="cus-check">
+                                                                    <div class="checkmark"></div>
+                                                                </span>
+                                                            </label>
+                                                            <div class="checkbox-details">
+                                                                <div class="deal-img"></div>
+                                                                <div class="checkbox-content">
+                                                                    <p class="block fs tt-u grey no-mp">email</p>
+                                                                    <p class="block fs black no-mp">Send over
+                                                                        investments documents</p>
+                                                                    <p class="block fs grey no-mp">Assigned to Mark.R
+                                                                        Added 12Jun 2014</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-widget">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="wrapper widget">
+                                <div class="card bd-none bdr-5 black mg-20 pd wd-100">
+                                    <div class="card-body no-mp">
+                                        <div class="owner">
+                                            <div class="row clearfix">
+                                                <div class="col-md-8">
+                                                    <div class="owner-info">
+                                                        <div class="owner-pic va-m"></div>
+                                                        <p class=""><span class="grey">Owner:</span> Mark Hansen</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="more-icon">
+                                                        <i class="material-icons grey">more_horiz</i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owner no-mp">
+                                            <div class="row clearfix">
+                                                <div class="col-md-9">
+                                                    <p class="no-mp">John Doe</p>
+                                                    <a href="#" class="no-mp">john.doe</a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="call-icon va-m ta-c">
+                                                        <div class="call va-m"><i class="material-icons va-m">call</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="wrapper widget">
+                                <div class="card bd-none bdr-5 black mg-20 pd wd-100">
+                                    <div class="card-body no-mp">
+                                        <div class="owner">
+                                            <div class="row clearfix">
+                                                <div class="col-md-8">
+                                                    <div class="owner-info">
+                                                        <div class="owner-pic va-m"></div>
+                                                        <p class=""><span class="grey">Owner:</span> Mark Hansen</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="more-icon">
+                                                        <i class="material-icons grey">more_horiz</i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owner no-mp">
+                                            <div class="row clearfix">
+                                                <div class="col-md-9">
+                                                    <p class="no-mp">John Doe</p>
+                                                    <a href="#" class="no-mp">john.doe</a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="call-icon va-m ta-c">
+                                                        <div class="call va-m"><i class="material-icons va-m">call</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="wrapper widget">
+                                <div class="card bd-none bdr-5 s-color black mg-20 pd wd-100">
+                                    <div class="add-widget va-m">
+                                        <i class="material-icons va-m block">add</i>
+                                        <p class="no-mp">Add Widget</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script>
+    $(".time-nav a").click(function () {
+        $('.time-nav a').removeClass("active");
+        $(this).addClass("active");
+        var id = this.id;
+        if (id == "3") {
+            $(".contact-sections").hide();
+            $("#dealContent").show();
+        }
+        if (id == "1") {
+            $(".contact-sections").hide();
+            $("#timelineContent").show();
+        }
+        if (id == "2") {
+            $(".contact-sections").hide();
+            $("#noteContent").show();
+        }
+
+    });   
+</script>
+
+</html>
